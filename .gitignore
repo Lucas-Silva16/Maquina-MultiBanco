@@ -1,0 +1,8 @@
+*.wdb
+isim/
+_xmsgs/
+*.log
+*.exe
+*.zip
+*.vdb
+*.bak

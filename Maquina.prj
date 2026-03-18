@@ -1,0 +1,3 @@
+verilog work "SomadorComoSubtrator.v"
+verilog work "ComparadorPinCod.v"
+vhdl work "Maquina.vhf"

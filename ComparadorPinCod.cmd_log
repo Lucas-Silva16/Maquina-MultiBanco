@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/ComparadorPinCod.v -lang verilog -prj MaquinaMultibanco -o ComparadorPinCod.spl -module ComparadorPinCod -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 ComparadorPinCod.spl /home/ise/MaquinaMultibanco/ComparadorPinCod.sym 

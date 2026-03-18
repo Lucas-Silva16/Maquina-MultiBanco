@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/MaquinaMultibanco/Maquina.xst" -ofn "/home/ise/MaquinaMultibanco/Maquina.syr" 

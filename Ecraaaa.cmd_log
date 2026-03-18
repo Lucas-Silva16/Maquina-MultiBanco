@@ -1,0 +1,4 @@
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecraaaa.v -lang verilog -prj MaquinaMultibanco -o Ecraaaa.spl -module Ecraaaa -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecraaaa.spl /home/ise/MaquinaMultibanco/Ecraaaa.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecraaaa.v -lang verilog -prj MaquinaMultibanco -o Ecraaaa.spl -module Ecraaaa -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecraaaa.spl /home/ise/MaquinaMultibanco/Ecraaaa.sym 

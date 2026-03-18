@@ -1,0 +1,6 @@
+verilog work "VerificadorDeSaldo.v"
+verilog work "SomadorComoSubtrator.v"
+verilog work "Ecra.v"
+verilog work "ComparadorPinCod.v"
+verilog work "MaquinaTEst.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

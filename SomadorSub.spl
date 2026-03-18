@@ -1,0 +1,12 @@
+[Inputs]
+pin_corret
+en
+saldo_suficiente
+=saldo[7:0]=
+=valor_debito[3:0]=
+[Outputs]
+=novo_saldo[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel SomadorSub
+

@@ -1,0 +1,35 @@
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lang verilog -prj MaquinaMultibanco -o /home/ise/MaquinaMultibanco/Ecra.vhi -lib work /home/ise/MaquinaMultibanco//Ecra.v -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 
+vhdtdtfi -lib work /home/ise/MaquinaMultibanco/Ecra.v -lang verilog -prj MaquinaMultibanco -o Ecra.spl -module Ecra -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 Ecra.spl /home/ise/MaquinaMultibanco/Ecra.sym 

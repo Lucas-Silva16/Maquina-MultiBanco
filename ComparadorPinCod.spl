@@ -1,0 +1,10 @@
+[Inputs]
+en
+=pin[3:0]=
+=cod[4:0]=
+[Outputs]
+pin_corret
+[BiDir]
+[ATTRIBUTES]
+VeriModel ComparadorPinCod
+

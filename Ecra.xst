@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/MaquinaMultibanco/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/MaquinaMultibanco/xst"
+elaborate
+-ifn Ecra.prj
+-ifmt mixed
