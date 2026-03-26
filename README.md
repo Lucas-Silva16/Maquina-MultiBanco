@@ -62,4 +62,4 @@ System validation was performed by simulating the following core scenarios:
 ---
 
 ## Conclusion
-This project bridges theoretical digital logic concepts with practical hardware simulation. By modularizing authentication, arithmetic, and security components, it demonstrates a scalable approach to designing finite state machines and secure digital systems operating strictly at the hardware level.
+This project bridges theoretical digital logic concepts with practical hardware simulation. By modularizing authentication, arithmetic, and security components, it demonstrates a scalable approach to designing finite state machines and secure digital systems operating strictly at the hardware level
