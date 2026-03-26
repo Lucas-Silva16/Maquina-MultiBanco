@@ -1,67 +1,65 @@
-# Caixa Multibanco Digital 💳🔐
+# Digital ATM in Verilog
 
-Este projeto implementa uma **caixa multibanco (ATM)** digital em Verilog, com simulação no **ISE Xilinx**, combinando lógica sequencial e esquemática para simular funcionalidades básicas de um terminal bancário.
+![Verilog](https://img.shields.io/badge/Language-Verilog-blue)
+![Tools](https://img.shields.io/badge/Tools-Xilinx_ISE-orange)
+![Domain](https://img.shields.io/badge/Domain-Digital_Logic-lightgrey)
 
-## 🎯 Objetivo
+## Introduction
+This project details the development and implementation of a digital **Automated Teller Machine (ATM)** system using **Verilog** hardware description language. It combines sequential logic and schematic design to accurately simulate the core functionalities of a banking terminal.
 
-Criar um sistema digital que simule operações essenciais de uma caixa multibanco:
-- Verificação de cartão (EN)
-- Autenticação por PIN
-- Débito de saldo com base num valor inserido
-- Geração de sinal de paridade para segurança
+The project covers the creation of fundamental logic blocks, their integration, and full system validation using the **Xilinx ISE** design suite.
 
-## ⚙️ Funcionamento do Sistema
+---
 
-1. **Inserção de Cartão (EN)**  
-   - `EN = 1` → cartão não inserido → sistema inativo  
-   - `EN = 0` → cartão inserido → iniciar verificação do PIN  
+## Objectives
+* **Authentication:** Implement robust card insertion detection and PIN verification logic.
+* **Transaction Processing:** Enable balance deduction based on user-inputted values using 2's complement arithmetic.
+* **Security:** Generate parity signals based on predefined identification numbers to ensure data integrity.
+* **Integration:** Combine isolated Verilog modules into a cohesive top-level digital system.
 
-2. **Verificação do PIN**  
-   - PIN inserido (4 bits) comparado com o código COD (5 bits, armazenado em BCD Excesso-3)  
-   - Se incorreto → `ECRA = 0`, `PAR = 1`, sistema inativo  
-   - Se correto → continuar operação bancária
+---
 
-3. **Transação Bancária**
-   - Valor da transação (`VAL`, 4 bits, complemento para 2)
-   - Subtração de `VAL` do `SALDO`
-   - Atualização do `SALDO` e exibição do novo valor no `ECRA`
+## System Architecture
 
-4. **Geração de Paridade**
-   - Bit de paridade gerado com base nos números mecanográficos do grupo, para validação extra de integridade
+### 1. Authentication Module
+* **Card Insertion (EN):** Acts as the primary enable signal. The system remains strictly inactive (`EN = 1`) until a card is physically detected (`EN = 0`).
+* **PIN Verification:** Compares a 4-bit user input (`PIN`) against a hardcoded 5-bit authentication code (`COD`) stored in Excess-3 BCD format.
 
-## 🧾 Componentes Principais
+### 2. Transaction Module
+* **Balance Management:** Stores and maintains the current account balance (`SALDO`).
+* **Arithmetic Operations:** Processes the requested transaction value (`VAL`, 4 bits) using 2's complement subtraction. It safely updates the internal balance and outputs the resulting value to the display (`ECRA`).
 
-| Componente | Descrição |
-|------------|-----------|
-| `EN`       | Entrada (1 bit), indica presença do cartão |
-| `PIN`      | Entrada (4 bits), código inserido pelo utilizador |
-| `COD`      | Código de autenticação (5 bits, BCD Excesso-3) |
-| `SALDO`    | Valor disponível na conta |
-| `VAL`      | Valor da transação (4 bits, complemento para 2) |
-| `ECRA`     | Saída, representa valor exibido no visor |
-| `PAR`      | Bit de paridade (1 bit) |
+### 3. Security Module
+* **Parity Generator:** Calculates a parity bit (`PAR`) based on specific student ID numbers, acting as a hardware-level validation layer.
 
-## 🛠️ Implementação
+---
 
-- Utilização de módulos separados para verificação de PIN, atualização de saldo e geração de paridade.
-- Códigos desenvolvidos em Verilog com parte esquemática integrada.
-- Simulação de todas as funcionalidades no **ISE Xilinx**.
+## Results and Validation
+System validation was performed by simulating the following core scenarios:
 
-## 🧪 Casos de Teste
+| Scenario | Description | Expected Result |
+| :--- | :--- | :--- |
+| **No Card** | `EN` signal set to 1. | System remains completely inactive; all operations blocked. |
+| **Invalid PIN** | `EN = 0`, but an incorrect 4-bit PIN is entered. | `ECRA = 0`, `PAR = 1`. Transaction is immediately denied. |
+| **Valid Transaction** | Correct PIN entered, followed by a valid withdrawal amount (`VAL`). | Deduction authorized, `SALDO` updated in memory, and the new balance is displayed on `ECRA`. |
 
-- Cartão não inserido → sistema inativo
-- PIN inválido → operação bloqueada
-- PIN correto → débito autorizado, saldo atualizado
-- Verificação do valor exibido no `ECRA` e sinal `PAR` gerado corretamente
+> **Note:** Full simulation waveforms validating these states can be found in the project documentation.
 
-## 🧠 Conceitos Aplicados
+---
 
-- Comparação binária e BCD Excesso-3
-- Complemento para 2
-- Lógica sequencial síncrona
-- Armazenamento e atualização de memória (saldo)
+## Technologies Used
+* **Language:** Verilog
+* **Development Environment:** Xilinx ISE Design Suite
+* **Core Concepts:** Excess-3 BCD, 2's Complement, Synchronous Sequential Logic
 
-## 📚 Conclusão
+---
 
-Este projeto demonstra de forma clara o funcionamento básico de um **sistema bancário digital**, integrando conceitos de eletrónica digital, verificação de segurança e operações aritméticas. Ótimo para consolidar conhecimento em **sistemas digitais** com Verilog e simulação FPGA.
+## File Structure
+* `/src`: Verilog source files and schematic modules.
+* `/sim`: Simulation waveforms and test configurations.
+* `/docs`: Project documentation and digital logic diagrams.
 
+---
+
+## Conclusion
+This project bridges theoretical digital logic concepts with practical hardware simulation. By modularizing authentication, arithmetic, and security components, it demonstrates a scalable approach to designing finite state machines and secure digital systems operating strictly at the hardware level.
